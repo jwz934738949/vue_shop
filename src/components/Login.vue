@@ -33,7 +33,7 @@
         // 登录表单的数据
         loginForm: {
           username: 'admin',
-          password: '123'
+          password: '123456'
         },
         // 登录表单的验证规则
         loginFormRules: {
@@ -57,7 +57,6 @@
       login() {
         this.$refs.loginFormRef.validate(async valid => {
           const {data: res} = await this.$http.post('login', this.loginForm)
-          console.log(res)
           if (res.meta.status !== 200) {
             this.$message.error('登录失败！')
           }else {
