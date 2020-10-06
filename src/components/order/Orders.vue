@@ -151,7 +151,7 @@
   }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
   .el-cascader {
     width: 100%;
   }
